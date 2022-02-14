@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$black: #272727;
+$darkblack:#121212;
+$white: #f2f3f7;
+$whiteopc: #f2f3f7d0;
+$whiteopc50: #f2f3f77e;
+$opc100: #f2f3f700;
+$red: #df3636;
+$yellow: hsl(61, 89%, 58%);
+
+$font-size-p: 1rem;
+$font-size-h1-2: 2rem;
+$font-size-h3-4: 1.3rem;
+
+$ff-prim:'Poppins', sans-serif;
+$ff-sec: 'Oswald', sans-serif;
+
+$fw-bold: 700;
+$fw-semi-bold: 500;
+$fw-semi-light: 450;
+$fw-reg: 400;
+$fw-light: 200;
+
+
+ h1{
+     font-family: $ff-prim;
+     font-size: $font-size-h1-2;
+     color: $black;
+     font-weight: $fw-bold
+ }
+ h2{
+     font-family: $ff-prim;
+     font-size: $font-size-h1-2;
+     color: $black;
+     font-weight: $fw-bold
+ }
+
+ h3{
+     font-family: $ff-prim;
+     font-size: $font-size-h3-4;
+     color: $black;
+     font-weight: $fw-semi-bold
+ }
+
+ h3{
+     font-family: $ff-prim;
+     font-size: $font-size-h3-4;
+     color: $black;
+     font-weight: $fw-semi-bold
+ }
+
+ h4{
+     font-family: $ff-prim;
+     font-size: $font-size-h3-4;
+     color: $black;
+     font-weight: $fw-semi-light;
+ }
+
+ p{
+     font-family: $ff-prim;
+     font-size: $font-size-p;
+     color: $black;
+     font-weight: $fw-reg;
+ }
+
+ a{
+    font-family: $ff-prim;
+    font-size: $font-size-p;
+    color: $black;
+    font-weight: $fw-reg;
+ }
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+html{
+    min-height: 100%;
+}
+
+body {
+    scroll-behavior: smooth;
+    background: linear-gradient(270deg, rgb(22, 22, 22) 0%, rgba(13,14,15,1) 100%);
+}
+nav {
+//top nav starter her
+.top-nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+
+
+
+
+.burger {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    background:$black;
+    border-radius: 50%;
+    z-index: 1;
+    cursor: pointer;
+    transition: .25s ease-in;
+    border: solid 1px $red;
+
+
+}
+
+.burger:hover {
+    background: $white;
+}
+
+
+    .line {
+        margin-left: 30%;
+        margin-top: .1em;
+        margin-bottom: .1em;
+        width: 20px;
+        height: 3px;
+        background: $white;
+        transition: .25s ease-in;
+        
+    }
+    
+
+    #line2{
+        width: 15px
+    }
+
+    #line3 {
+        width: 12px;
+    }
+
+   
+}
+
+
+
+
+
+
+
+.menu-points {
+    
+
+    ul {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background: $yellow;
+        border-radius: 4px;
+        transform: translateX(10px);
+        z-index: 0;
+        transform-origin: left;
+        transition: .1s ease-in;
+        font-size: 1.2rem;
+        opacity: 0;
+
+
+        li{
+            list-style: none;
+            margin: 0em 1em;
+            
+
+            a{
+                text-decoration: none;
+                color: #272727;
+                font-weight: $fw-semi-bold;
+                font-size: $font-size-h3-4;
+
+
+            }
+        }
+    }
+}
+
+//side-nav starter her 
+
+
+.side-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    top: 25%;
+    background: #272727;
+    border-radius: 12px;
+    margin: 1em;
+    width: 2em;
+
+
+
+
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+    }
+    li{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 1em 0em;
+        padding: .5em;
+        color: $yellow;
+        border-radius: 8px;
+        transition: .10s ease-in-out;
+        cursor: pointer;
+  
+    }
+
+    li:hover{
+        background:$darkblack;
+        color: $white;
+        display: flex;
+    }
+    
+  
+
+
+    #nav-text{
+        opacity: 0;
+        transition: .15s ease-in;
+        font-size: .8rem;
+        white-space: none;
+        color: $white;
+
+    }
+   
+   
+
+.nav-icon {
+    height: 24px;
+}
+}
+
+
+}
+
+.logo-watermark{       
+     position: absolute;
+     width: 50%;
+     top: 10%;
+     right: 5%;
+     z-index: -1;
+     filter: invert(.5%) sepia(1%) saturate(4420%) hue-rotate(202deg) brightness(118%) contrast(91%);
+
+}
+
+// Content starter her 
+
+.top-container-about {
+    display: flex;
+    flex-direction: column;
+    margin: 6em;
+
+   p{
+       font-size: 3rem;
+       color:  $whiteopc;
+       font-family: $ff-sec;
+   }
+
+    h1{
+        font-size: 8rem;
+        color: $white;
+    }
+
+    i {
+        color: $yellow ;
+        transition: .15s cubic-bezier(0,.61,1,.47);
+
+    }
+
+
+    .text-enlarge-background{
+        transition: .15s cubic-bezier(0,.61,1,.47);
+        width: 50%;
+        transform-origin: left;
+
+    }
+
+    .text-enlarge-background:hover {
+        transform: scale(1.2);
+        
+    }
+
+    .icon-container {
+        margin: 1em;
+        display: flex;
+
+        .some-icon-top {
+            cursor: pointer;
+            transition: .15s cubic-bezier(0,.61,1,.47);
+            
+        }
+
+        .background-icon{
+            margin: 1em;
+            height: 50px;
+            width: 50px;
+            background: $opc100;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: .25s cubic-bezier(50,.61,1,.47);
+        }
+
+        .background-icon:hover{
+            background: $whiteopc50;
+        }
+        
+    
+       
+    }
+    
+
+}
+
+
+.about-me-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0;
+   
+
+.about-me-content{
+    display: flex;
+    flex-direction: column;
+    max-width: 65ch;
+    margin-left: 7em;
+    border-left: solid 2px $yellow;
+    padding: 1em;
+   
+    h2{
+        color: $whiteopc
+    }
+
+    p{
+        color:  $white;
+        margin: 1em 0;
+    }
+}
+
+.real-duck-img {
+    height: 60em;
+}
+}
+
+
+.portfolio-container{
+    display: flex;
+    flex-direction: column;
+
+    
+
+    .portfolio-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h2{
+            color: $whiteopc;
+        }
+
+        p{
+            max-width: 70ch;
+            color: $white;
+            margin: 2em;
+
+        }
+
+        hr {
+            width: 80%;
+            border: none;
+            height: 3px;
+            background: $yellow;
+            border-radius: 50%;
+            filter: blur(2px);
+        }
+        
+        
+    }
+}
+
+
+.skills-container{
+
+    .sub-head-portfolio {
+        color: $whiteopc;
+        margin: 2em;
+        margin-left: 5em;
+    }
+    
+.beam-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    .beam{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        background: linear-gradient( 270deg, #070707, #161616);
+        width: 25%;
+        border-radius: 12px;
+        margin: 2em;
+        transition: .15s cubic-bezier(50,.61,1,.47);
+        transform-origin: left;
+
+        h3{
+            color: $white;
+        }
+        
+        .beam-logo{
+
+            width: 3em;
+            margin: .2em;
+            
+        }
+    }
+}
+}
+
+
+ //Alot of hovers comming up
+
+ #illustrator:hover{
+    background: #330000;
+}
+
+#photoshop:hover{
+    background: #001E36;
+}
+
+#xd:hover {
+    background: #470137;
+}
+
+#procreate:hover {
+    background: #242424;
+}
+
+#animate:hover {
+    background: #00005B;
+}
+
+#aftereffects:hover {
+    background: #00005B;
+}
+
+
