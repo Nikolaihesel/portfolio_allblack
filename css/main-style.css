@@ -464,6 +464,7 @@ nav .side-nav .nav-icon {
 
 .skills-container .beam-container .beam .beam-logo {
   width: 3em;
+  height: 3em;
   margin: .2em;
 }
 
@@ -489,5 +490,25 @@ nav .side-nav .nav-icon {
 
 #aftereffects:hover {
   background: #00005B;
+}
+
+#vscode:hover {
+  background: #0389D2;
+}
+
+#html-logo:hover {
+  background: #E64D1F;
+}
+
+#css:hover {
+  background: #264DE4;
+}
+
+#js-logo:hover {
+  background: #f7e017;
+}
+
+#wordpress:hover {
+  background: #248bfd;
 }
 /*# sourceMappingURL=main-style.css.map */

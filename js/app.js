@@ -1,3 +1,5 @@
+
+//styrer øverste navigation - første del er farven ved hover, anden del er åben / luk.
 const topNav = document.getElementById('top-nav');
 const menu = document.getElementById('menu-items');
 const burger = document.querySelectorAll('.line');
@@ -28,6 +30,8 @@ topNav.addEventListener('click', () =>  {
     };
 });
 
+
+//udvid side navigation ved hover og få den til at trække sammen igen 
 const navText = document.querySelectorAll('#nav-text')
 const nav = document.getElementById('nav');
 
@@ -52,25 +56,9 @@ nav.addEventListener('mouseout', function handleMouseOut(){
     });
 })
 
-//Styrer aktiv nav class
+//Styrer aktiv nav class ved scroll
 
 
-
-const textFieldIcon = document.getElementById('turn-text')
-const iconToTurn = document.getElementById('turn-icon')
-
-textFieldIcon.addEventListener('mouseover', () =>  {
-
-    iconToTurn.style.transform ="rotate(45deg)"
-
-});
-
-
-textFieldIcon.addEventListener('mouseout', () =>  {
-
-    iconToTurn.style.transform ="rotate(0deg)"
-
-});
 
 //onscroll events her 
 window.onscroll = function() {hideNav()};
@@ -89,9 +77,31 @@ window.onload = hideNav();
 
 window.onscroll
 
+
+//virker ikke endnu - skal få section til at glide ind ved scroll. 
 const aboutMeSection = document.getElementById('about-me-section');
 
 aboutMeSection.addEventListener("scroll", (event) => {
     let scroll = scrollY;
     console.log(scroll)
+});
+
+// får X til at rotere
+
+
+const textFieldIcon = document.getElementById('turn-text')
+const iconToTurn = document.getElementById('turn-icon')
+
+textFieldIcon.addEventListener('mouseover', () =>  {
+
+    iconToTurn.style.transform ="rotate(45deg)"
+
+});
+
+
+
+textFieldIcon.addEventListener('mouseout', () =>  {
+
+    iconToTurn.style.transform ="rotate(0deg)"
+
 });

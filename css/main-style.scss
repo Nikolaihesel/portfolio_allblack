@@ -435,11 +435,12 @@ nav {
         .beam-logo{
 
             width: 3em;
+            height: 3em;
             margin: .2em;
             
         }
     }
-}
+  }
 }
 
 
@@ -468,5 +469,28 @@ nav {
 #aftereffects:hover {
     background: #00005B;
 }
+
+#vscode:hover {
+    background: #0389D2;
+}
+
+#html-logo:hover{
+    background: #E64D1F;
+}
+
+#css:hover{
+    background: #264DE4;
+}
+
+#js-logo:hover{
+    background: rgb(247,224,23);
+}
+
+#wordpress:hover{
+    background: rgb(36,139,253);
+}
+
+
+
 
 
