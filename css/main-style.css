@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Monda:wght@400;700&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prata&display=swap");
 h1 {
   font-family: "Poppins", sans-serif;
   font-size: 2rem;
@@ -271,9 +270,16 @@ nav .side-nav .nav-icon {
   font-family: "Oswald", sans-serif;
 }
 
-.top-container-about h1 {
+.top-container-about .header-name {
+  font-family: "Oswald", sans-serif;
   font-size: 8rem;
-  color: #f2f3f7;
+  color: #f2f3f7d0;
+  font-weight: 400;
+  letter-spacing: -10px;
+}
+
+.top-container-about .header-name .span-name {
+  color: #f0f335;
 }
 
 .top-container-about i {
@@ -407,7 +413,7 @@ nav .side-nav .nav-icon {
   margin: 2em;
 }
 
-.portfolio-container .portfolio-content hr {
+.section-shift-red {
   width: 80%;
   border: none;
   height: 3px;
@@ -510,5 +516,114 @@ nav .side-nav .nav-icon {
 
 #wordpress:hover {
   background: #248bfd;
+}
+
+#scss-logo:hover {
+  background: #f77bb9;
+}
+
+.portfolio-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 4em;
+}
+
+.portfolio-cards .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: linear-gradient(321deg, #0a0000 0%, #001e3e 100%);
+  width: 25%;
+  margin: 2em;
+  border-radius: 16px;
+  -webkit-box-shadow: #121212 3px 3px 3px 3px;
+          box-shadow: #121212 3px 3px 3px 3px;
+  background-size: 400% 400%;
+}
+
+.portfolio-cards .card img {
+  width: 10em;
+  margin: 1em;
+}
+
+.portfolio-cards .card h3 {
+  color: #f2f3f7;
+  margin: .3em;
+}
+
+.portfolio-cards .card p {
+  max-width: 30ch;
+  margin: 1em;
+  color: #f2f3f7;
+}
+
+.portfolio-cards .card .btn-read-more {
+  background: #f0f335;
+  border: none;
+  padding: .5em;
+  margin: 1em 0em;
+  border-radius: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.15s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: 0.15s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.portfolio-cards .card .btn-read-more a {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+}
+
+.portfolio-cards .card .btn-read-more:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 /*# sourceMappingURL=main-style.css.map */
