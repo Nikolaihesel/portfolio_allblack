@@ -105,3 +105,54 @@ textFieldIcon.addEventListener('mouseout', () =>  {
     iconToTurn.style.transform ="rotate(0deg)"
 
 });
+
+function disableScroll() {
+    // Get the current page scroll position
+    scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+  
+        // if any scroll is attempted, set this to the previous value
+        window.onscroll = function() {
+            window.scrollTo(scrollLeft, scrollTop);
+        };
+};
+
+function enableScroll() {
+    window.onscroll = function() {};
+};
+
+
+
+
+
+
+const modalIllu = document.getElementById('ad-illu');
+const skillBeam = document.getElementById('illustrator');
+const bgBlur = document.getElementById('blur-bg');
+const skillsBG = document.getElementById('about-skills');
+const closeModal = document.getElementById('close-modal');
+
+const skillsClass = document.querySelectorAll('.skills-about-modal');
+
+const modalSkills = [ modalIllu, "hello"]
+
+skillBeam.addEventListener('click', () => {
+    modalSkills[0].style.display="flex";
+    bgBlur.style.display="flex";
+
+    disableScroll();
+
+    
+});
+
+closeModal.addEventListener('click', () => {
+    skillsClass.forEach(modal => {
+        modal.style.display="none";
+    });
+    bgBlur.style.display="none";
+    enableScroll();
+});
+
+
+
+

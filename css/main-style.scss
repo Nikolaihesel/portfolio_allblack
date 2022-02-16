@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Monda:wght@400;700&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prata&display=swap');
 
 $black: #272727;
-$darkblack:#121212;
+$darkblack:#0c0c0c;
 $white: #f2f3f7;
 $whiteopc: #f2f3f7d0;
 $whiteopc50: #f2f3f77e;
@@ -435,6 +435,7 @@ nav {
         margin: 2em;
         transition: .15s cubic-bezier(50,.61,1,.47);
         transform-origin: left;
+        cursor: pointer;
 
         h3{
             color: $white;
@@ -514,13 +515,14 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(321deg, rgba(10,0,0,1) 0%, rgba(0,30,62,1) 100%,);
+    background: linear-gradient(321deg, rgb(36, 0, 24) 50%, rgb(0, 82, 170) 100%);
     width: 25%;
     margin: 2em;
     border-radius: 16px;
     box-shadow: $darkblack 3px 3px 3px 3px;
-    background-size: 400% 400%;
-   // animation: gradient 15s ease infinite;
+    background-size: 500% 200%;
+    animation: gradient 10s ease infinite;
+    transform: translateZ(0);
 
     img{
         width: 10em;
@@ -574,6 +576,87 @@ nav {
 	100% {
 		background-position: 0% 50%;
 	}
+}
+
+
+
+.container-skills-about-modal{
+   
+
+    .background-blur {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        background: #272727bd;
+        filter: blur(10px);
+        display: none;
+    }
+
+
+    .skills-about-modal {
+    position: fixed;
+    top: 10%;
+    bottom: 10%;
+    left: 10%;
+    right: 10%;
+    overflow: auto;
+    background: $darkblack;
+    border-radius: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    display: none;
+    
+
+    h4 {
+        color: $white;
+        margin-left: 2rem;
+    }
+
+    p {
+        max-width: 60ch;
+        margin: 2rem;
+        color: $whiteopc;
+    }
+
+    .top-container-modal-skills{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        max-width: 100%;
+        margin: 2em;
+
+        h3 {
+            color:  $white;
+            margin-left: 1em;
+            font-size: 4rem;
+        }
+
+        img{
+            height: 10em;
+        }
+
+        i{
+            color: $white;
+            position: absolute;
+            top: 10%;
+            right: 5%;
+            transform: scale(1.4);
+            cursor: pointer;
+            
+        }
+
+        i:hover {
+            opacity: .3;
+        }
+
+
+    }
+        
+        
+}
+
 }
 
 

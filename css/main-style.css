@@ -223,7 +223,7 @@ nav .side-nav li {
 }
 
 nav .side-nav li:hover {
-  background: #121212;
+  background: #0c0c0c;
   color: #f2f3f7;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -462,6 +462,7 @@ nav .side-nav .nav-icon {
   transition: 0.15s cubic-bezier(50, 0.61, 1, 0.47);
   -webkit-transform-origin: left;
           transform-origin: left;
+  cursor: pointer;
 }
 
 .skills-container .beam-container .beam h3 {
@@ -549,13 +550,17 @@ nav .side-nav .nav-icon {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: linear-gradient(321deg, #0a0000 0%, #001e3e 100%);
+  background: linear-gradient(321deg, #240018 50%, #0052aa 100%);
   width: 25%;
   margin: 2em;
   border-radius: 16px;
-  -webkit-box-shadow: #121212 3px 3px 3px 3px;
-          box-shadow: #121212 3px 3px 3px 3px;
-  background-size: 400% 400%;
+  -webkit-box-shadow: #0c0c0c 3px 3px 3px 3px;
+          box-shadow: #0c0c0c 3px 3px 3px 3px;
+  background-size: 500% 200%;
+  -webkit-animation: gradient 10s ease infinite;
+          animation: gradient 10s ease infinite;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
 }
 
 .portfolio-cards .card img {
@@ -625,5 +630,88 @@ nav .side-nav .nav-icon {
   100% {
     background-position: 0% 50%;
   }
+}
+
+.container-skills-about-modal .background-blur {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  background: #272727bd;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+  display: none;
+}
+
+.container-skills-about-modal .skills-about-modal {
+  position: fixed;
+  top: 10%;
+  bottom: 10%;
+  left: 10%;
+  right: 10%;
+  overflow: auto;
+  background: #0c0c0c;
+  border-radius: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  display: none;
+}
+
+.container-skills-about-modal .skills-about-modal h4 {
+  color: #f2f3f7;
+  margin-left: 2rem;
+}
+
+.container-skills-about-modal .skills-about-modal p {
+  max-width: 60ch;
+  margin: 2rem;
+  color: #f2f3f7d0;
+}
+
+.container-skills-about-modal .skills-about-modal .top-container-modal-skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 100%;
+  margin: 2em;
+}
+
+.container-skills-about-modal .skills-about-modal .top-container-modal-skills h3 {
+  color: #f2f3f7;
+  margin-left: 1em;
+  font-size: 4rem;
+}
+
+.container-skills-about-modal .skills-about-modal .top-container-modal-skills img {
+  height: 10em;
+}
+
+.container-skills-about-modal .skills-about-modal .top-container-modal-skills i {
+  color: #f2f3f7;
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+  cursor: pointer;
+}
+
+.container-skills-about-modal .skills-about-modal .top-container-modal-skills i:hover {
+  opacity: .3;
 }
 /*# sourceMappingURL=main-style.css.map */
