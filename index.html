@@ -12,13 +12,14 @@
     <link rel="stylesheet" href="./css/main-style.css">
     <script src="./js/app.js" defer></script>
 
+
 </head>
 
 <body>
 
     <header>
 
-        <img class="logo-watermark" src="./img/duck-logo.svg" alt="">
+        <img class="logo-watermark slide-in-right" src="./img/duck-logo.svg" alt="">
         <nav>
 
             <div class="top-nav-container">
@@ -64,18 +65,19 @@
 
         <div class="top-container-about">
             <div class="content-container-top">
-                <span class="Description">
-                    <p>Multimediadesign Student</p>
+                <span class="description slide-in-left">
+                    <p class="slide-in-left">Multimediadesign Student</p>
                 </span>
-                <h1 class="header-name"> <span class="span-name">N</span>ikolai <span class="span-name">H</span>esel
+                <h1 class="header-name slide-in-left"> <span class="span-name">N</span>ikolai <span
+                        class="span-name">H</span>esel
                 </h1>
 
-                <p class="text-enlarge-background" id="turn-text">Code <i id="turn-icon"
+                <p class="text-enlarge-background slide-in-left" id="turn-text">Code <i id="turn-icon"
                         class="fa-solid fa-xmark rotate-45deg"></i>
                     Design </p>
 
             </div>
-            <div class="icon-container">
+            <div class="icon-container slide-in-left">
 
                 <div class="background-icon">
                     <i class="some-icon-top fa-brands fa-instagram fa-2xl"></i>
@@ -354,8 +356,12 @@
     </article>
 
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/EasePack.min.js"></script>
 
-
+    <script src="./js/animation.js" defer></script>
 </body>
 
 </html>
