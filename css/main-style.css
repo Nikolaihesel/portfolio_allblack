@@ -385,6 +385,12 @@ nav .side-nav .nav-icon {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .portfolio-container .portfolio-content {
@@ -413,14 +419,12 @@ nav .side-nav .nav-icon {
   margin: 2em;
 }
 
-.section-shift-red {
+.section-shift-yellow {
   width: 80%;
   border: none;
   height: 3px;
   background: #f0f335;
   border-radius: 50%;
-  -webkit-filter: blur(2px);
-          filter: blur(2px);
 }
 
 .skills-container .sub-head-portfolio {
@@ -521,115 +525,6 @@ nav .side-nav .nav-icon {
 
 #scss-logo:hover {
   background: #f77bb9;
-}
-
-.portfolio-cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 4em;
-}
-
-.portfolio-cards .card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: linear-gradient(321deg, #240018 50%, #0052aa 100%);
-  width: 25%;
-  margin: 2em;
-  border-radius: 16px;
-  -webkit-box-shadow: #0c0c0c 3px 3px 3px 3px;
-          box-shadow: #0c0c0c 3px 3px 3px 3px;
-  background-size: 500% 200%;
-  -webkit-animation: gradient 10s ease infinite;
-          animation: gradient 10s ease infinite;
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
-}
-
-.portfolio-cards .card img {
-  width: 10em;
-  margin: 1em;
-}
-
-.portfolio-cards .card h3 {
-  color: #f2f3f7;
-  margin: .3em;
-}
-
-.portfolio-cards .card p {
-  max-width: 30ch;
-  margin: 1em;
-  color: #f2f3f7;
-}
-
-.portfolio-cards .card .btn-read-more {
-  background: #f0f335;
-  border: none;
-  padding: .5em;
-  margin: 1em 0em;
-  border-radius: 12px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transition: 0.15s cubic-bezier(0.075, 0.82, 0.165, 1);
-  transition: 0.15s cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-
-.portfolio-cards .card .btn-read-more a {
-  font-family: "Oswald", sans-serif;
-  font-weight: 500;
-}
-
-.portfolio-cards .card .btn-read-more:hover {
-  -webkit-transform: scale(1.15);
-          transform: scale(1.15);
-}
-
-@-webkit-keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
 }
 
 .container-skills-about-modal .background-blur {

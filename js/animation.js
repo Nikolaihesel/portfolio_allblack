@@ -18,7 +18,7 @@ gsap.from(".real-duck-img",{
     x: 500,
     opacity: 0, 
     stagger: .3,
-    ease: "power2.out",
+    ease: "power2",
 
 });
 
@@ -28,6 +28,16 @@ gsap.from(".about-me-content",{
     x: -500,
     opacity: 0, 
     stagger: .3,
-    ease: "power2.out"
+    ease: "power2"
+
+});
+
+gsap.from(".portfolio-content",{
+    scrollTrigger:  ".portfolio-container",
+    duration: 2, 
+    x: 500,
+    opacity: 0, 
+    stagger: .3,
+    ease: "power2"
 
 });
