@@ -67,6 +67,10 @@ body {
   background: linear-gradient(270deg, #161616 0%, #0d0e0f 100%);
 }
 
+.active {
+  display: block;
+}
+
 nav .top-nav-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -608,5 +612,61 @@ nav .side-nav .nav-icon {
 
 .container-skills-about-modal .skills-about-modal .top-container-modal-skills i:hover {
   opacity: .3;
+}
+
+.portfolio-card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.portfolio-card-container #card2 {
+  display: none;
+}
+
+.portfolio-card-container .portfolio-card {
+  margin-top: 3em;
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(109.6deg, #131313, #051131 91.1%);
+}
+
+.portfolio-card-container .portfolio-card h2, .portfolio-card-container .portfolio-card h3 {
+  color: #f2f3f7;
+  margin: 1rem;
+  font-size: 2rem;
+  font-family: "Oswald", sans-serif;
+}
+
+.portfolio-card-container .portfolio-card .portfolio-description-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5em;
+}
+
+.portfolio-card-container .portfolio-card .portfolio-description-container p {
+  color: #f2f3f7;
+  max-width: 50ch;
+  margin: 1em;
+  font-size: 1.2rem;
+  line-height: 2.2rem;
+}
+
+.portfolio-card-container .portfolio-card .portfolio-description-container img {
+  width: 25em;
 }
 /*# sourceMappingURL=main-style.css.map */

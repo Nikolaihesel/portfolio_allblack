@@ -159,3 +159,23 @@ closeModal.addEventListener('click', () => {
 
 
 
+const nextBtn = document.getElementById('next-card');
+const card1  = document.getElementById('card1');
+const card2  = document.getElementById('card2');
+const card3  = document.getElementById('card3');
+const card4  = document.getElementById('card4');
+const card5  = document.getElementById('card5');
+
+const cardsList = [card1, card2, card3, card4, card5]
+
+let currentCard =  cardsList.find(card => {
+  return  
+  card.classList.contains("active")
+})
+
+nextBtn.addEventListener('click', () =>{
+ currentCard.nextSibling.classList.add('active');
+ currentCard.previousSibling.classList.remove('active');
+})
+
+console.log(cardsList[1])

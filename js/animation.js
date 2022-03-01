@@ -6,6 +6,19 @@ gsap.from(".slide-in-right", {duration: 1.5, x: 500, opacity: 0, stagger: .3,});
 
 gsap.registerPlugin(ScrollTrigger);
 
+
+gsap.from(".about-me-content",{
+    scrollTrigger: ".about-me-content",
+    duration: 2, 
+    x: -200,
+    opacity: 0, 
+    stagger: .3,
+    ease: "power4"
+
+});
+
+
+
 gsap.from(".real-duck-img",{
     scrollTrigger: {
         trigger: ".about-me-content",
@@ -15,29 +28,21 @@ gsap.from(".real-duck-img",{
        // markers: true
 },
     duration: 2, 
-    x: 500,
+    x: 200,
     opacity: 0, 
     stagger: .3,
-    ease: "power2",
+    ease: "power4",
 
 });
 
-gsap.from(".about-me-content",{
-    scrollTrigger: ".about-me-content",
-    duration: 2, 
-    x: -500,
-    opacity: 0, 
-    stagger: .3,
-    ease: "power2"
 
-});
 
 gsap.from(".portfolio-content",{
     scrollTrigger:  ".portfolio-container",
     duration: 2, 
-    x: 500,
+    x: 200,
     opacity: 0, 
     stagger: .3,
-    ease: "power2"
+    ease: "power4"
 
 });
